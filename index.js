@@ -16,9 +16,35 @@ const inoki = ['いち','に','さん'];
 //}
 
 //ifelse文
-if(inoki.length > 2){
-console.log('ボンバイエ！');
-}  else{
-    console.log('ボンバ..')
-}
+//if(inoki.length > 2){
+//console.log('ボンバイエ！');
+//}  else{
+//    console.log('ボンバ..')
+//}
 
+//関数
+const test = (arg) => {if(inoki.length > arg){
+    console.log('ボンバイエ！');
+    }  else{
+        console.log('ボンバ..')
+    } };
+
+    test (1);
+    test (2);
+    test (3);
+
+    //オブジェクト
+    const nakayou2 = {
+        color: 'pink',
+        size: 'large',
+        purfume: 'mint',
+        gotoilet: () => {
+            console.log('hello world');
+        }
+    };
+
+//window.alert('カエルの歌が聞こえてくるよ');
+
+document.getElementsByTagName('button')[0].addEventListener('click', ()=> {
+    window.alert('カエルの歌がきこえてくるよ');
+});
